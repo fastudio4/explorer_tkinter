@@ -4,7 +4,6 @@ from tkinter.ttk import *
 
 class Explorer(object):
     def __init__(self, master):
-
         self.disk_select = Combobox(master, values=self.Drive())
         self.disk_select.current(0)
         self.disk_select.bind('<<ComboboxSelected>>', self.AddDrivePath)
